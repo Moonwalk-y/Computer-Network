@@ -8,6 +8,7 @@ My computer network class's learning notes.My notes and code about network proto
 
 - 同时支持HTTP（80端口）和HTTPS（443端口）：使用两个线程分别监听各自端口。
 - 只需支持GET方法，解析客户端的请求报文，并返回相应应答内容（见下表）。
+
 | 状态码 | 状态描述 | 触发条件与功能说明 |
 | :--- | :--- | :--- |
 | **200** | **OK** | 对于 **443 端口**接收的请求，若请求文件存在，则返回该状态码及文件完整内容。 |
