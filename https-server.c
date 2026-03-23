@@ -21,7 +21,7 @@ void* http_server(void* arg){
     if(suc != 0){printf("bind falled.");return NULL;}
 
     listen(server_fd,10);//socket设置为监听模式
-    printf("http 服务器启动，监听 88 端口\n");
+    printf("http 服务器启动，监听 80 端口\n");
 
     while(1){
         int client_fd = accept(server_fd,NULL,NULL);
